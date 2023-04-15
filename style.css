@@ -1,0 +1,295 @@
+body{
+    background-image: url(./shara\ desert.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+.container-1{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+
+    
+
+}
+
+.navbar{
+    display: flex;
+    cursor: pointer;
+
+}
+
+
+ul li{
+    list-style: none;
+    margin: 0px 20px;
+    display: inline-block;
+    padding: 0px 10px;
+}
+
+.container-2{
+    display: flex;
+    margin-top: 70px;
+    column-gap: 30%;
+
+}
+
+
+.sahara{
+    position: relative;
+    left: 15%;
+    top: 20px;
+}
+
+.lor1{
+    font-size:100px;
+    font-weight: bolder;
+    color: aliceblue;
+}
+
+.lor2{
+    position: relative;
+    top: -80px;
+    color: aliceblue;
+}
+
+button{
+    position: relative;
+    top: -70px;
+    background-color: white;
+    color: black;
+    border-radius: 40px;
+    height: 40px;
+    width: 170px;
+    font-weight: bolder;
+    border: 0px;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 200px 200px;
+    height: 500px;
+    row-gap: 20px;
+    column-gap: 40px;
+    width: 90%;
+}
+
+
+.box{
+    transition: 0.5s;
+    cursor: pointer;
+    border-radius: 20px;
+    color: white;
+    padding-left: 20px;
+}
+
+.ls{
+    line-height: 30px;
+    font-size:x-small;
+    margin-top: -25px;
+}
+
+.box1{
+    
+    background-image: url(./pic-1.png);
+    background-size: cover;
+}
+.box2{
+    background-image: url(./pic-2.png);
+    background-size: cover;
+}
+.box3{
+    background-image: url(./pic-3.png);
+    background-size: cover;
+}
+.box4{
+    background-image: url(./pic-4.png);
+    background-size: cover;
+}
+
+.box:hover{
+    transform: translateY(-10px);
+}
+
+
+@media screen and (min-width:280px) and (max-width:380px){
+    body{
+        background-size: 900%;
+    }
+    
+    .grid{
+        grid-template-columns: auto;
+        
+    }
+
+    .box{
+        height: 200px;
+    }
+    ul li{
+        display: block;
+        color: white;
+    }
+    .container-2{
+        display: block;
+    }
+    .lor1{
+        position: relative;
+        top: 5px;
+        font-size: 20px;
+        font-weight: bolder;
+
+    }
+    .lor2{
+        position: relative;
+        top: 10px;
+    }
+   button{
+    position: relative;
+    top: 10px;
+   }
+
+   .grid{
+    margin-top: 60px;
+    width: 70%;
+    height: 90%;
+    padding-left: 60px;
+   }
+
+}
+
+
+
+/* ################### for tab ################### */
+
+/* @media screen and (min-width:500px) and (max-width:900px){
+    body{
+        background-size: cover;
+        background-position: center;
+        background-repeat: repeat;
+        height: 100%;
+
+    }
+
+    .navbar{
+        color: white;
+    }
+
+    .container2{
+        display: none;
+    }
+    
+    .sahara{
+        position: relative;
+        top: -100px;
+    }
+
+    .lor1{
+        position: relative;
+        font-size:xx-large;
+        top: 10px;
+
+    }
+    .lor2{
+        position: relative;
+        top: 0px;
+    }
+
+    button{
+        position: relative;
+        top: 10px;
+    }
+
+    .grid{
+        display: block;
+    }
+
+    .box{
+        width: 120%;
+        height: 200px;
+    }
+} */
+
+
+
+
+
+@media screen and (min-width:500px) and (max-width:1000px){
+    
+    
+    .grid{
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-around;
+    }
+
+    .box{
+        height: 250px;
+        width: 600px;
+    }
+
+    .box1{
+        background-image: url(./pic-1.png);
+        background-size:cover;
+        background-position: center;
+    }
+
+    .box2{
+        background-image: url(./pic-2.png);
+        background-size:cover;
+        background-position: center;
+    }
+    .box3{
+        background-image: url(./pic-3.png);
+        background-size:cover;
+        background-position: center;
+    }
+    .box4{
+        background-image: url(./pic-4.png);
+        background-size:cover;
+        background-position: center;
+    }
+
+    body{
+        background-image: url(./shara\ desert.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position:fixed;
+    }
+
+    .sahara{
+        width: 500px;
+    }
+
+    .container-2{
+        flex-direction: column;
+        align-items: center;
+        row-gap: 20px;
+    }
+
+    .lor1{
+        font-size: xx-large;
+        margin-top: -90px;
+        margin-left: -190px;
+
+    }
+    .lor2{
+        margin-top: 90px;
+        margin-left: -190px;
+    }
+
+    button{
+        margin-left: -190px;
+    }
+
+    .container-1{
+        flex-wrap: wrap;
+        gap: 0px;
+    }
+
+    .navbar{
+        flex-wrap: wrap;
+        color: white;
+    }
+}
